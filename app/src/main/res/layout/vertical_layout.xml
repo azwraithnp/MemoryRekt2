@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/juggernaut_back">
+
+
+
+
+<LinearLayout
+    android:layout_width="90dp"
+    android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+        android:fadingEdge="none" android:id="@+id/vertical_scrollview_id" android:background="#ffffff"
+        android:scrollbars="none">
+        <LinearLayout android:id="@+id/vertical_outer_layout_id" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:gravity="left">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/hero_portrait"
+        android:layout_marginTop="85dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/countdown"
+        android:background="@drawable/circle"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignBottom="@+id/hero_portrait"
+        android:layout_alignRight="@+id/imageView6"
+        android:layout_alignEnd="@+id/imageView6" />
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="What is this skill?"
+        android:textColor="#FFFFFF"
+        android:id="@+id/what_skill"
+        android:layout_marginLeft="195dp"
+        android:textSize="27dp"/>
+
+    <EditText
+        android:visibility="invisible"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/skill_input"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_centerHorizontal="true"
+        android:background="#000000"/>
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:id="@+id/timer"
+        android:layout_toRightOf="@+id/what_skill"
+        android:layout_toEndOf="@+id/what_skill" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="280dp"
+        android:id="@+id/arrow"
+        android:background="@drawable/arrow"
+        android:clickable="true"
+        android:onClick="onClick5"
+        android:layout_alignLeft="@+id/timer"
+        android:layout_alignStart="@+id/timer" />
+
+
+
+</RelativeLayout>
