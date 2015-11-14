@@ -32,6 +32,7 @@ import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
 
+    //declarations and init
     public int currentimage2index=0;
     public int lives_counter = 3;
     ImageView border_img;
