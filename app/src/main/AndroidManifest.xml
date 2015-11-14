@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:largeHeap="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/finalapplogo512"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -26,11 +26,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".VerticalSlidesho" android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
